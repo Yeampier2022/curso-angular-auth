@@ -55,4 +55,8 @@ export class AuthService {
       newPassword,
     });
   }
+
+  logout() {
+    this.tokenServices.removeToken()
+  }
 }
